@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Device</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="header-nav">
+      <a href="#" class="header-nav__logo"><img src="img/header-logo.svg" alt="Слово device крупными буквами"></a>
+      <div class="header-nav__first-wrapper">
+        <div class="header-nav__form-wrapper">
+          <form action="https://echo.htmlacademy.ru/" method="post" class="header-nav_form">
+            <label class="header-nav__field field">
+              <span class="visually-hidden">Текст поиска</span>
+              <input class="header-nav__field-input" type="text" name="text-of-search" placeholder="Текст поиска">
+              <span class="field-icon"></span>
+            </label>
+          </form>
+          <button class="button" type="button">Найти</button>
+        </div>
+        <div class="header-nav__sign-in-wrapper">
+          <a class="header-nav__sign-in-icon" href="#">Войти</a>
+        </div>
+      </div>
+      <div class="header-nav__first-wrapper">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
+      </div>
+    </nav>
+  </header>
+</body>
 </html>

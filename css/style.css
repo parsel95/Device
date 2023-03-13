@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/rubik/rubik-400.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/rubik/rubik-700.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-800.woff2);
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header-nav__sign-in-icon {
+  background-image: url(../icons/header/2.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+
+
