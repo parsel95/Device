@@ -11,7 +11,7 @@
   <div class="container">
     <header class="page-header">
       <nav class="header-nav">
-        <a href="#" class="header-nav__logo">
+        <a href="index.html" class="header-nav__logo">
           <svg width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M27.2188 0V35.3H19.6135V32.9C17.9124 34.8 15.5107 36 12.1084 36C5.5038 36 0 30.2 0 22.7C0 15.2 5.5038 9.4 12.1084 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2188ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60524 18.9 7.60524 22.7C7.60524 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z" fill="black"/>
             <path d="M43.7298 29.1999C45.8313 29.1999 47.5325 28.3999 48.5332 27.2999L54.6374 30.7999C52.1356 34.1999 48.4331 35.9999 43.6298 35.9999C35.0238 35.9999 29.6201 30.1999 29.6201 22.6999C29.6201 15.1999 35.0238 9.3999 43.0294 9.3999C50.4345 9.3999 55.8382 15.0999 55.8382 22.6999C55.8382 23.7999 55.7381 24.7999 55.538 25.6999H37.6256C38.6263 28.2999 40.9279 29.1999 43.7298 29.1999ZM48.333 20.0999C47.5325 17.1999 45.2309 16.0999 42.9293 16.0999C40.0273 16.0999 38.126 17.4999 37.4255 20.0999H48.333Z" fill="black"/>
@@ -29,7 +29,7 @@
               <div class="nav-bar__form-wrapper">
                 <label tabindex="0" class="nav-bar__field">
                   <span class="visually-hidden">Текст поиска</span>
-                  <input class="nav-bar__field-input" type="text" name="text-of-search" placeholder="Текст поиска">
+                  <input class="nav-bar__field-input" type="text" name="text-of-search" placeholder="Текст поиска" required>
                   <span class="nav-bar__field-icon"></span>
                 </label>
               </div>
@@ -48,10 +48,51 @@
               <a href="#" class="navigation-menu__link standart-state">Сравнить</a>
             </li>
             <li class="navigation-menu__item">
-              <a href="#" class="navigation-menu__link standart-state">
+              <a href="#" class="navigation-menu__link popover__close-button standart-state">
                 <span class="navigation-menu__icon">2</span>
                   Корзина
               </a>
+              <div class="popover popver-cart">
+                  <div class="popover__content">
+                    <h2 class="visually-hidden">Корзина</h2>
+
+                    <ul class="popover__product-list">
+                      <li class="popover__product-item">
+                        <img src="img/Modal window/product-1-small.jpg" alt="" class="popover__product-img">
+                        <p class="popover__product-description popover__text">
+                          Любительская селфи-палка
+                        </p>
+                        <button class="popover__product-delete-button" tabindex="-1">
+                          <span class="popover__product-delete-line"></span>
+                          <span class="popover__product-delete-line"></span>
+                          <span class="popover__product-delete-line-wrapper" tabindex="0"></span>
+                          <span class="visually-hidden">Удалить товар из корзины</span>
+                        </button>
+                      </li>
+                      <li class="popover__product-item">
+                        <img src="img/Modal window/product-2-small.jpg" alt="" class="popover__product-img">
+                        <p class="popover__product-description popover__text">
+                          Профессиональная селфи-палка
+                        </p>
+                        <button class="popover__product-delete-button" tabindex="-1">
+                          <span class="popover__product-delete-line"></span>
+                          <span class="popover__product-delete-line"></span>
+                          <span class="popover__product-delete-line-wrapper" tabindex="0"></span>
+                          <span class="visually-hidden">Удалить товар из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div class="popover__summary">
+                      <p class="popover__text">Товаров: 2</p>
+                      <p class="popover__text">Сумма: 2000 ₽</p>
+                    </div>
+
+                    <div class="popover__button-wrapper">
+                      <a href="#" class="popover__button">открыть корзину</a>
+                    </div>
+                  </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -66,7 +107,7 @@
                   <a href="#" class="dropdown__link standart-state">Виртуальная реальность</a>
                 </li>
                 <li class="dropdown__item">
-                  <a href="#" class="dropdown__link standart-state">Моноподы для cелфи</a>
+                  <a href="catalog.html" class="dropdown__link standart-state">Моноподы для cелфи</a>
                 </li>
                 <li class="dropdown__item">
                   <a href="#" class="dropdown__link standart-state">Экшн-камеры</a>
@@ -347,7 +388,7 @@
             </a>
           </li>
           <li class="product-categories__item" tabindex="0">
-            <a class="product-categories__link" href="#" tabindex="-1">
+            <a class="product-categories__link" href="catalog.html" tabindex="-1">
               <img src="img/Index/2.Category/Selfi.svg" alt="" class="product-categories__img">
               <p class="product-categories__text">Моноподы
                 для селфи</p>
@@ -592,7 +633,7 @@
               <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="suscribe__field field">
                   <span class="visually-hidden">E-mail</span>
-                  <input type="email" class="field-input" placeholder="Ваш e-mail">
+                  <input type="email" class="field-input" placeholder="Ваш e-mail" required>
                   <span class="suscribe__field-icon"></span>
                 </label>
                 <div class="subscribe__button-wrapper">
@@ -705,6 +746,69 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal__container">
+    <div class="modal modal-auth">
+
+      <section class="modal__content">
+        <div class="modal__header-wrapper">
+          <h2 class="modal__main-title section-title">Доставка под заказ</h2>
+
+          <button class="modal__close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+
+        <form  class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal__form-item">
+            Ваше имя:
+            <input class="modal__input modal__input-name" type="text" placeholder="Введите имя" name="Name-of-client" required>
+            <span class="modal__input-icon-name"></span>
+            <div class="modal__input-message">Добавьте имя</div>
+          </label>
+
+          <label class="modal__form-item">
+            Ваш e-mail:
+            <input class="modal__input modal__input-email" type="e-mail" placeholder="Введите e-mail" name="E-mail" required>
+            <span class="modal__input-icon-email"></span>
+            <div class="modal__input-message">Забавный у вас адрес</div>
+          </label>
+
+          <label class="modal__form-item">
+            Что нужно привезти:
+            <input class="modal__input" type="text" placeholder="В свободной форме" name="List-of-products">
+          </label>
+
+          <label class="modal__form-item">
+            Количество:
+            <span class="modal__form__additional">
+              <div class="modal__form__additional-information">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+              </div>
+            </span>
+            <div class="modal__form-amount-wrapper">
+              <button type="button" class="modal__form-button modal__form-button-minus">
+                <span class="modal__form-minus"></span>
+              </button>
+              <input class="modal__input modal__input-amount" type="number" value="1" step="1" min="1" max="10000" name="Amount-of-products">
+              <button type="button" class="modal__form-button modal__form-button-plus">
+                <span class="modal__plus"></span>
+                <span class="modal__plus"></span>
+              </button>
+            </div>
+          </label>
+
+          <button type="submit" class="modal__submit-button button-yellow button">
+            Отправить
+            <span class="visually-hidden">Отправить</span>
+          </button>
+        </form>
+
+      </section>
+
+    </div>
+  </div>
+
   <script src="/js/script.js"></script>
 </body>
 </html>
