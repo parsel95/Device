@@ -1487,6 +1487,7 @@ details[open] > .dropdown__list-wrapper {
   padding: 0;
   margin: 0 0 20px 0;
 
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -2225,61 +2226,38 @@ details[open] > .dropdown__list-wrapper {
   height: 43px;
 }
 
-.popover__product-description {
-  margin-right: 30px;
-}
-
-.popover__product-delete-line-wrapper {
-
-  width: 12px;
-  height: 12px;
-
-  position: absolute;
-  top: -0.5px;
-  left: -9px;
-}
-
-.popover__product-delete-line-wrapper:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
 .popover__product-delete-button {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   border: none;
-  width: 0;
-  height: 0;
   position: relative;
+  left: 20px;
+  top: -20px;
   align-self: flex-start;
   display: grid;
   background-color: transparent;
   cursor: pointer;
 }
 
+.popover__product-delete-button::after {
+  content: '';
+  background: url(../icons/Popover/cross.svg) no-repeat center;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
 .popover__product-delete-button:hover {
   opacity: 0.6;
 }
 
+.popover__product-delete-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: -18px;
+}
+
 .popover__product-delete-button:active {
   opacity: 0.3;
-}
-
-.popover__product-delete-line {
-  position: absolute;
-  top: 4px;
-  left: -8px;
-  display: inline-block;
-  background: #FFFFFF;
-  height: 2px;
-  width: 10px;
-}
-
-.popover__product-delete-line:nth-child(1) {
-  transform: rotate(-45deg);
-}
-
-.popover__product-delete-line:nth-child(2) {
-  transform: rotate(45deg);
 }
 
 /* modal*/
@@ -2292,6 +2270,7 @@ details[open] > .dropdown__list-wrapper {
   display: flex;
   top: 0;
   right: 0;
+  z-index: 5;
 
   display: none;
 }
@@ -2426,7 +2405,7 @@ details[open] > .dropdown__list-wrapper {
   box-shadow: inset 0 0 0 2px #FF3D3D;
 }
 
-.modal__form-item:not(:last-of-type) .modal__input {
+.modal__input:not(.modal__input-amount) {
   padding: 20px 0 20px 20px;
 }
 
@@ -2447,6 +2426,9 @@ details[open] > .dropdown__list-wrapper {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+
+  padding: 0;
+  margin: 0;
 }
 
 .modal__input-message-error {
@@ -2499,6 +2481,7 @@ details[open] > .dropdown__list-wrapper {
 
 .modal__form__additional-information {
   width: 200px;
+  margin: 0;
   padding: 18px;
   box-sizing: border-box;
   position: absolute;
@@ -2511,6 +2494,7 @@ details[open] > .dropdown__list-wrapper {
   font-size: 16px;
   font-weight: 400;
   color:#FFFFFF;
+
 }
 
 .modal__form__additional-information::before {
@@ -2609,7 +2593,7 @@ details[open] > .dropdown__list-wrapper {
   height: 2px;
 }
 
-.modal__plus:last-child {
+.modal__plus-vertical {
   transform: rotate(-90deg);
   position: absolute;
 }
