@@ -6,12 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Catalog-Device</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicons/apple-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <div class="container">
     <header class="page-header">
       <nav class="header-nav">
-        <a href="index.html" class="header-nav__logo">
+        <a class="header-nav__logo" href="index.html">
           <svg width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип сайта.">
             <path d="M27.2188 0V35.3H19.6135V32.9C17.9124 34.8 15.5107 36 12.1084 36C5.5038 36 0 30.2 0 22.7C0 15.2 5.5038 9.4 12.1084 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2188ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60524 18.9 7.60524 22.7C7.60524 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z" fill="black"/>
             <path d="M43.7298 29.1999C45.8313 29.1999 47.5325 28.3999 48.5332 27.2999L54.6374 30.7999C52.1356 34.1999 48.4331 35.9999 43.6298 35.9999C35.0238 35.9999 29.6201 30.1999 29.6201 22.6999C29.6201 15.1999 35.0238 9.3999 43.0294 9.3999C50.4345 9.3999 55.8382 15.0999 55.8382 22.6999C55.8382 23.7999 55.7381 24.7999 55.538 25.6999H37.6256C38.6263 28.2999 40.9279 29.1999 43.7298 29.1999ZM48.333 20.0999C47.5325 17.1999 45.2309 16.0999 42.9293 16.0999C40.0273 16.0999 38.126 17.4999 37.4255 20.0999H48.333Z" fill="black"/>
@@ -27,14 +45,14 @@
           <div class="nav-bar__form-wrapper">
             <form action="https://echo.htmlacademy.ru/" method="post" class="nav-bar__form">
               <div class="nav-bar__form-wrapper">
-                <label tabindex="0" class="nav-bar__field">
-                  <span class="visually-hidden">Текст поиска</span>
+                <label class="nav-bar__field" tabindex="0">
+                  <span class="visually-hidden">Текст поиска.</span>
                   <input class="nav-bar__field-input" type="text" name="text-of-search" placeholder="Текст поиска" required>
                   <span class="nav-bar__field-icon"></span>
                 </label>
               </div>
-              <div tabindex="0" class="nav-bar__button-wrapper">
-                <button tabindex="-1" class="nav-bar__button" type="submit">Найти</button>
+              <div class="nav-bar__button-wrapper" tabindex="0">
+                <button class="nav-bar__button" type="submit" tabindex="-1">Найти</button>
               </div>
             </form>
           </div>
@@ -47,35 +65,28 @@
 
           <ul class="nav-bar__navigation-menu navigation-menu">
             <li class="navigation-menu__item">
-              <a href="#" class="navigation-menu__link standart-state">Сравнить</a>
+              <a class="navigation-menu__link standart-state" href="#">Сравнить</a>
             </li>
             <li class="navigation-menu__item">
-              <a href="#" class="navigation-menu__link standart-state">
-                <span class="navigation-menu__icon">2</span>
-                  Корзина
-              </a>
-
+              <a class="navigation-menu__link standart-state" href="#">
+                <span class="navigation-menu__icon">2</span>Корзина</a>
               <div class="popover popver-cart">
                 <div class="popover__content">
                   <h2 class="visually-hidden">Корзина</h2>
 
                   <ul class="popover__product-list">
                     <li class="popover__product-item">
-                      <img src="img/Modal-window/product-1-small.jpg" alt="" class="popover__product-img" width="39" height="43">
-                      <p class="popover__product-description popover__text">
-                        Любительская селфи-палка
-                      </p>
+                      <img class="popover__product-img" src="img/Modal-window/product-1-small.jpg" alt="" width="39" height="43">
+                      <p class="popover__product-description popover__text">Любительская селфи-палка</p>
                       <button class="popover__product-delete-button" type="button">
-                        <span class="visually-hidden">Удалить товар из корзины</span>
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
                       </button>
                     </li>
                     <li class="popover__product-item">
-                      <img src="img/Modal-window/product-2-small.jpg" alt="" class="popover__product-img" width="39" height="43">
-                      <p class="popover__product-description popover__text">
-                        Профессиональная селфи-палка
-                      </p>
+                      <img class="popover__product-img" src="img/Modal-window/product-2-small.jpg" alt="" width="39" height="43">
+                      <p class="popover__product-description popover__text">Профессиональная селфи-палка</p>
                       <button class="popover__product-delete-button" type="button">
-                        <span class="visually-hidden">Удалить товар из корзины</span>
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
                       </button>
                     </li>
                   </ul>
@@ -86,7 +97,7 @@
                   </div>
 
                   <div class="popover__button-wrapper">
-                    <a href="#" class="popover__button">открыть корзину</a>
+                    <a class="popover__button" href="#">Открыть корзину.</a>
                   </div>
                 </div>
               </div>
@@ -101,26 +112,26 @@
             <div class="dropdown__list-wrapper">
               <ul class="dropdown__list">
                 <li class="dropdown__item">
-                  <a href="#" class="dropdown__link standart-state">Виртуальная реальность</a>
+                  <a class="dropdown__link standart-state" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="dropdown__item">
-                  <a href="catalog.html" class="dropdown__link standart-state">Моноподы для cелфи</a>
+                  <a class="dropdown__link standart-state" href="catalog.html">Моноподы для cелфи</a>
                 </li>
                 <li class="dropdown__item">
-                  <a href="#" class="dropdown__link standart-state">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link standart-state">Фитнес-браслеты</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link standart-state">Умные часы</a>
+                  <a class="dropdown__link standart-state" href="#">Экшн-камеры</a>
                 </li>
               </ul>
               <ul class="dropdown__list">
                 <li class="dropdown__item">
-                  <a href="#" class="dropdown__link standart-state">Квадрокоптеры</a>
+                  <a class="dropdown__link standart-state" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link standart-state" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link standart-state" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </div>
@@ -129,13 +140,13 @@
 
           <ul class="header-nav__information-menu information-menu">
             <li class="information-menu__item">
-              <a href="#" class="information-menu__link standart-state">Доставка</a>
+              <a class="information-menu__link standart-state" href="#">Доставка</a>
             </li>
             <li class="information-menu__item">
-              <a href="#" class="information-menu__link standart-state">Гарантия</a>
+              <a class="information-menu__link standart-state" href="#">Гарантия</a>
             </li>
             <li class="information-menu__item">
-              <a href="#" class="information-menu__link standart-state">Контакты</a>
+              <a class="information-menu__link standart-state" href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -146,20 +157,22 @@
   <main class="catalog-main">
 
     <div class="container">
-      <h1 class="section-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="index.html" class="breadcrumbs__link">Главная</a>
-          <span class="breadcrumbs__arrow"></span>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Каталог товаров</a>
-          <span class="breadcrumbs__arrow"></span>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="catalog.html" class="breadcrumbs__link">Моноподы для селфи</a>
-        </li>
-      </ul>
+      <div class="breadcrumbs__wrapper">
+        <h1 class="section-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+            <span class="breadcrumbs__arrow"></span>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+            <span class="breadcrumbs__arrow"></span>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="catalog.html">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="background-container">
@@ -179,11 +192,11 @@
                       <div class="range__scale">
                         <div class="range__bar">
                           <button class="range__toogle range__toogle-min" type="button" tabindex="0">
-                            <span class="visually-hidden">Ручка минимальной цены</span>
+                            <span class="visually-hidden">Ручка минимальной цены.</span>
                           </button>
 
                           <button class="range__toogle range__toogle-max" type="button" tabindex="0">
-                            <span class="visually-hidden">Ручка максимальной цены</span>
+                            <span class="visually-hidden">Ручка максимальной цены.</span>
                           </button>
                         </div>
                       </div>
@@ -191,12 +204,12 @@
                       <div class="range__wrapper-inputs">
                         <label class="range__label">
                           от
-                          <input type="number" class="range__input" value="0" name="price-from" min="0" max="10000" step="100">
+                          <input class="range__input" type="number" value="0" name="price-from" min="0" max="10000" step="100">
                         </label>
 
                         <label class="range__label">
                           до
-                          <input type="number" class="range__input" value="5000" name="price-to" min="0" max="10000" step="100">
+                          <input class="range__input" type="number" value="5000" name="price-to" min="0" max="10000" step="100">
                         </label>
                       </div>
                     </div>
@@ -271,14 +284,12 @@
                 </fieldset>
               </form>
 
-              <a href="#" class="filter__button button button-yellow">
-                Показать
-              </a>
+              <a class="filter__button button button-yellow" href="#">Показать</a>
             </div>
           </section>
 
           <section class="catalog">
-            <h2 class="visually-hidden">Результаты поисков</h2>
+            <h2 class="visually-hidden">Результаты поисков.</h2>
 
             <div class="catalog__sorting">
               <h3 class="catalog__title">Сортировка:</h3>
@@ -306,16 +317,16 @@
 
               <div class="catalog__sorting-buttons">
                 <button class="catalog__sorting-button catalog__sorting-button-up" type="button">
-                  <span class="visually-hidden">По возрастанию</span>
+                  <span class="visually-hidden">По возрастанию.</span>
                 </button>
                 <button class="catalog__sorting-button catalog__sorting-button-down" type="button">
-                  <span class="visually-hidden">По убыванию</span>
+                  <span class="visually-hidden">По убыванию.</span>
                 </button>
               </div>
             </div>
 
             <div class="catalog__card-list">
-              <h3 class="visually-hidden">Карточки товаров</h3>
+              <h3 class="visually-hidden">Карточки товаров.</h3>
 
               <article class="card" tabindex="0">
                 <a class="card__link" href="#" tabindex="-1">
@@ -324,10 +335,7 @@
                     <h4 class="card__title">Любительская селфи-палка</h4>
                     <p class="card__text">500 ₽</p>
                   </div>
-                  <p class="card__button button">
-                    <span class="button-yellow-line"></span>
-                    Подробнее
-                  </p>
+                  <p class="card__button button"><span class="button-yellow-line"></span>Подробнее</p>
                   <span class="card__new">NEW</span>
                 </a>
               </article>
@@ -349,31 +357,24 @@
 
               <article class="card" tabindex="0">
                 <a class="card__link" href="#" tabindex="-1">
-                  <img src="img/Catalog/product-2-2.png" alt="" class="card__img" width="360" height="380">
+                  <img class="card__img" src="img/Catalog/product-2-2.png" alt="" width="360" height="380">
                   <div class="card__wrapper">
-                    <h4 class="card__title">Непотопляемая
-                      селфи-палка</h4>
+                    <h4 class="card__title">Непотопляемая селфи-палка</h4>
                     <p class="card__text">2 500 ₽</p>
                   </div>
-                  <p class="card__button button">
-                    <span class="button-yellow-line"></span>
-                    Подробнее
-                  </p>
+                  <p class="card__button button"><span class="button-yellow-line"></span>Подробнее</p>
                   <span class="card__new">NEW</span>
                 </a>
               </article>
 
               <article class="card" tabindex="0">
                 <a class="card__link" href="#" tabindex="-1">
-                  <img src="img/Catalog/product-2-3.png" alt="" class="card__img" width="360" height="380">
+                  <img class="card__img" src="img/Catalog/product-2-3.png" alt="" width="360" height="380">
                   <div class="card__wrapper">
                     <h4 class="card__title">Селфи-палка «Следуй за мной»</h4>
                     <p class="card__text">1 500 ₽</p>
                   </div>
-                  <p class="card__button button">
-                    <span class="button-yellow-line"></span>
-                    Подробнее
-                  </p>
+                  <p class="card__button button"><span class="button-yellow-line"></span>Подробнее</p>
                   <span class="card__new">NEW</span>
                 </a>
               </article>
@@ -385,11 +386,11 @@
               <div class="pagination__list-wrapper">
                 <h3 class="visually-hidden">Список страниц</h3>
 
-                <a href="#" class="pagination__button pagination__button-back ">Назад</a>
+                <a class="pagination__button pagination__button-back" href="#">Назад</a>
 
                 <ul class="pagination__list">
                   <li class="pagination__item pagination__item-active">
-                    <a href="#" class="pagination__link">1</a>
+                    <a class="pagination__link" href="#">1</a>
                   </li>
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">2</a>
@@ -405,7 +406,7 @@
                   </li>
                 </ul>
 
-                <a href="#" class="pagination__button pagination__button-forward">Вперёд</a>
+                <a class="pagination__button pagination__button-forward" href="#">Вперёд</a>
               </div>
             </div>
 
@@ -418,7 +419,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__body">
-        <a href="index.html" class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <svg width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип сайта.">
             <path d="M27.2188 0V35.3H19.6135V32.9C17.9124 34.8 15.5107 36 12.1084 36C5.5038 36 0 30.2 0 22.7C0 15.2 5.5038 9.4 12.1084 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2188ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60524 18.9 7.60524 22.7C7.60524 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z" fill="#FFC700"/>
             <path d="M43.7298 29.1999C45.8313 29.1999 47.5325 28.3999 48.5332 27.2999L54.6374 30.7999C52.1356 34.1999 48.4331 35.9999 43.6298 35.9999C35.0238 35.9999 29.6201 30.1999 29.6201 22.6999C29.6201 15.1999 35.0238 9.3999 43.0294 9.3999C50.4345 9.3999 55.8382 15.0999 55.8382 22.6999C55.8382 23.7999 55.7381 24.7999 55.538 25.6999H37.6256C38.6263 28.2999 40.9279 29.1999 43.7298 29.1999ZM48.333 20.0999C47.5325 17.1999 45.2309 16.0999 42.9293 16.0999C40.0273 16.0999 38.126 17.4999 37.4255 20.0999H48.333Z" fill="#FFC700"/>
@@ -435,17 +436,17 @@
 
           <ul class="page-footer__information-menu">
             <li class="page-footer__information-menu-item">
-              <a href="#" class="page-footer__information-menu-link">Доставка</a>
+              <a class="page-footer__information-menu-link" href="#">Доставка</a>
             </li>
             <li class="page-footer__information-menu-item">
-              <a href="#" class="page-footer__information-menu-link">Гарантия</a>
+              <a class="page-footer__information-menu-link" href="#">Гарантия</a>
             </li>
             <li class="page-footer__information-menu-item">
-              <a href="#" class="page-footer__information-menu-link">Контакты</a>
+              <a class="page-footer__information-menu-link" href="#">Контакты</a>
             </li>
           </ul>
 
-          <a href="tel:+78128121212" class="page-footer__number-phone">Тел.: +7 (812) 812-12-12</a>
+          <a class="page-footer__number-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
 
         <div class="page-footer__links-list">
@@ -456,39 +457,39 @@
             <ul class="social">
               <li class="social__item">
                 <div class="social__outline-link" tabindex="0">
-                  <a href="https://www.facebook.com/htmlacademy" class="social__link" tabindex="-1">
+                  <a class="social__link" href="https://www.facebook.com/htmlacademy" tabindex="-1">
                     <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
                       <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="#444444"/>
                     </svg>
-                    <span class="visually-hidden">Facebook</span>
+                    <span class="visually-hidden">Facebook.</span>
                   </a>
                 </div>
               </li>
               <li class="social__item">
                 <div class="social__outline-link" tabindex="0">
-                  <a href="https://www.instagram.com/htmlacademy/" class="social__link" tabindex="-1">
+                  <a class="social__link" href="https://www.instagram.com/htmlacademy/" tabindex="-1">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
                       <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="#444444"/>
                       <path d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z" fill="#444444"/>
                     </svg>
-                    <span class="visually-hidden">Instagram</span>
+                    <span class="visually-hidden">Instagram.</span>
                   </a>
                 </div>
               </li>
               <li class="social__item">
                 <div class="social__outline-link" tabindex="0">
-                  <a href="https://twitter.com/htmlacademy_ru" class="social__link" tabindex="-1">
+                  <a class="social__link" href="https://twitter.com/htmlacademy_ru" tabindex="-1">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
                       <path d="M9.7 0.155143C11.2 -0.344857 12.3 0.455143 12.9 1.25514C13.4 1.05514 14 0.855143 14.6 0.655143C14.6 1.45514 14.1 2.05514 13.8 2.25514C14.5 2.45514 15 1.85514 15 1.85514C14.9 2.75514 14.1 3.55514 13.6 3.75514C13.4 10.0551 10.8 14.1551 4.7 14.0551C4.2 14.0551 4.8 14.0551 4.3 14.0551C4 14.0551 0.6 13.6551 0 12.2551C2 12.4551 3.4 11.8551 4.1 11.1551C3.3 10.8551 1.7 10.7551 1.5 8.35514C1.8 8.55514 2 8.65514 2.6 8.55514C1.5 7.75514 0.3 7.05514 0.4 5.05514C0.7 5.35514 1.3 5.55514 1.6 5.45514C1 5.25514 -0.2 2.35514 0.8 0.855143C2.4 2.55514 4.1 4.25514 7.1 4.35514C7.3 2.25514 8.1 0.855143 9.7 0.155143Z" fill="#444444"/>
                     </svg>
-                    <span class="visually-hidden">Twitter</span>
+                    <span class="visually-hidden">Twitter.</span>
                   </a>
                 </div>
               </li>
             </ul>
           </div>
           <div class="page-footer__html-academy-wrapper">
-            <a href="https://htmlacademy.ru/" class="page-footer__links-list-link">
+            <a class="page-footer__links-list-link" href="https://htmlacademy.ru/">
               <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип html-academy.">
                 <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700"/>
                 <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" fill="#FFC700"/>
@@ -525,7 +526,7 @@
         <form  class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal__form-item">
             Ваше имя:
-            <input class="modal__input modal__input-name" type="text" placeholder="Введите имя" name="Name-of-client" required>
+            <input class="modal__input modal__input-name" type="text" placeholder="Введите имя" onfocus="(this.type='date')" name="Name-of-client" required>
             <span class="modal__input-icon-name"></span>
             <span class="modal__input-message">Добавьте имя</span>
           </label>
@@ -553,21 +554,18 @@
             <div class="modal__form-amount-wrapper">
               <button type="button" class="modal__form-button modal__form-button-minus">
                 <span class="modal__form-minus"></span>
-                <span class="visually-hidden">Уменьшить количество</span>
+                <span class="visually-hidden">Уменьшить количество.</span>
               </button>
               <input class="modal__input modal__input-amount" type="number" value="1" step="1" min="1" max="10000" name="Amount-of-products" id="Amount-of-products">
               <button type="button" class="modal__form-button modal__form-button-plus">
                 <span class="modal__plus"></span>
                 <span class="modal__plus modal__plus-vertical"></span>
-                <span class="visually-hidden">Увеличить количество</span>
+                <span class="visually-hidden">Увеличить количество.</span>
               </button>
             </div>
-
           </div>
 
-          <button type="submit" class="modal__submit-button button-yellow button">
-            Отправить
-          </button>
+          <button class="modal__submit-button button-yellow button" type="submit">Отправить</button>
         </form>
       </section>
     </div>
