@@ -21,7 +21,6 @@
     "unit-no-unknown": true,
     "font-family-no-missing-generic-family-keyword": true,
     "no-descending-specificity": null,
-    "color-hex-case": "lower",
     "color-hex-length": "long",
     "font-family-name-quotes": "always-unless-keyword",
     "function-comma-newline-after": "always-multi-line",

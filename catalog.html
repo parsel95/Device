@@ -60,7 +60,7 @@
           <div class="nav-bar__sign-wrapper">
             <a class="nav-bar__sign-in-icon standart-state" href="#">Коля Петухов</a>
 
-            <a class="nav-bar__log-out-icon standart-state" href="#">Выйти</a>
+            <a class="nav-bar__log-out-icon nav-bar__log-out-icon-active standart-state" href="#">Выйти</a>
           </div>
 
           <ul class="nav-bar__navigation-menu navigation-menu">
@@ -70,36 +70,40 @@
             <li class="navigation-menu__item">
               <a class="navigation-menu__link standart-state" href="#">
                 <span class="navigation-menu__icon">2</span>Корзина</a>
-              <div class="popover popver-cart">
-                <div class="popover__content">
-                  <h2 class="visually-hidden">Корзина</h2>
+                <div class="popover popver-cart">
+                  <div class="popover__content">
+                    <h2 class="visually-hidden">Корзина.</h2>
 
-                  <ul class="popover__product-list">
-                    <li class="popover__product-item">
-                      <img class="popover__product-img" src="img/Modal-window/product-1-small.jpg" alt="" width="39" height="43">
-                      <p class="popover__product-description popover__text">Любительская селфи-палка</p>
-                      <button class="popover__product-delete-button" type="button">
-                        <span class="visually-hidden">Удалить товар из корзины.</span>
-                      </button>
-                    </li>
-                    <li class="popover__product-item">
-                      <img class="popover__product-img" src="img/Modal-window/product-2-small.jpg" alt="" width="39" height="43">
-                      <p class="popover__product-description popover__text">Профессиональная селфи-палка</p>
-                      <button class="popover__product-delete-button" type="button">
-                        <span class="visually-hidden">Удалить товар из корзины.</span>
-                      </button>
-                    </li>
-                  </ul>
+                    <ul class="popover__product-list">
+                      <li class="popover__product-item">
+                        <a class="popover__state-wrapper" href="#">
+                          <img class="popover__product-img" src="img/Modal-window/product-1-small.jpg" alt="" width="39" height="43">
+                          <p class="popover__product-description popover__text">Любительская селфи-палка</p>
+                        </a>
+                        <button class="popover__product-delete-button" type="button">
+                          <span class="visually-hidden">Удалить товар из корзины.</span>
+                        </button>
+                      </li>
+                      <li class="popover__product-item">
+                        <a class="popover__state-wrapper" href="#">
+                          <img class="popover__product-img" src="img/Modal-window/product-2-small.jpg" alt=""  width="39" height="43">
+                          <p class="popover__product-description popover__text">Профессиональная селфи-палка</p>
+                        </a>
+                        <button class="popover__product-delete-button" type="button">
+                          <span class="visually-hidden">Удалить товар из корзины.</span>
+                        </button>
+                      </li>
+                    </ul>
 
-                  <div class="popover__summary">
-                    <p class="popover__text">Товаров: 2</p>
-                    <p class="popover__text">Сумма: 2000 ₽</p>
+                    <div class="popover__summary">
+                      <p class="popover__text">Товаров: 2</p>
+                      <p class="popover__text">Сумма: 2000 ₽</p>
+                    </div>
+
+                    <div class="popover__button-wrapper">
+                      <a class="popover__button" href="#">Открыть корзину</a>
+                    </div>
                   </div>
-
-                  <div class="popover__button-wrapper">
-                    <a class="popover__button" href="#">Открыть корзину.</a>
-                  </div>
-                </div>
               </div>
             </li>
           </ul>
@@ -182,7 +186,7 @@
             <div class="filter__wrapper">
               <h2 class="filter__main-title">Фильтр:</h2>
 
-              <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+              <form class="filter__form" action="https://echo.htmlacademy.ru/" method="post">
 
                 <fieldset class="filter__fieldset">
                   <div class="filter__legend-wrapper">
@@ -282,9 +286,9 @@
                     </ul>
                   </div>
                 </fieldset>
-              </form>
 
-              <a class="filter__button button button-yellow" href="#">Показать</a>
+                <button class="filter__button button button-yellow" type="submit">Показать</button>
+              </form>
             </div>
           </section>
 
@@ -432,7 +436,9 @@
         </a>
 
         <div class="page-footer__contacts-list">
-          <address class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+          <div class="page-footer__adress-wrapper">
+            <address class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+          </div>
 
           <ul class="page-footer__information-menu">
             <li class="page-footer__information-menu-item">
@@ -446,7 +452,7 @@
             </li>
           </ul>
 
-          <a class="page-footer__number-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <div class="page-footer__phone-wrapper"><a class="page-footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a></div>
         </div>
 
         <div class="page-footer__links-list">
@@ -526,7 +532,7 @@
         <form  class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal__form-item">
             Ваше имя:
-            <input class="modal__input modal__input-name" type="text" placeholder="Введите имя" onfocus="(this.type='date')" name="Name-of-client" required>
+            <input class="modal__input modal__input-name" type="text" placeholder="Введите имя" name="Name-of-client" required>
             <span class="modal__input-icon-name"></span>
             <span class="modal__input-message">Добавьте имя</span>
           </label>

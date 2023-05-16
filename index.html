@@ -59,6 +59,8 @@
 
           <div class="nav-bar__sign-wrapper">
             <a class="nav-bar__sign-in-icon standart-state" href="#">Войти</a>
+
+            <a class="nav-bar__log-out-icon standart-state" href="#">Выйти</a>
           </div>
 
           <ul class="nav-bar__navigation-menu navigation-menu">
@@ -74,15 +76,19 @@
 
                     <ul class="popover__product-list">
                       <li class="popover__product-item">
-                        <img class="popover__product-img" src="img/Modal-window/product-1-small.jpg" alt="" width="39" height="43">
-                        <p class="popover__product-description popover__text">Любительская селфи-палка</p>
+                        <a class="popover__state-wrapper" href="#">
+                          <img class="popover__product-img" src="img/Modal-window/product-1-small.jpg" alt="" width="39" height="43">
+                          <p class="popover__product-description popover__text">Любительская селфи-палка</p>
+                        </a>
                         <button class="popover__product-delete-button" type="button">
                           <span class="visually-hidden">Удалить товар из корзины.</span>
                         </button>
                       </li>
                       <li class="popover__product-item">
-                        <img class="popover__product-img" src="img/Modal-window/product-2-small.jpg" alt=""  width="39" height="43">
-                        <p class="popover__product-description popover__text">Профессиональная селфи-палка</p>
+                        <a class="popover__state-wrapper" href="#">
+                          <img class="popover__product-img" src="img/Modal-window/product-2-small.jpg" alt=""  width="39" height="43">
+                          <p class="popover__product-description popover__text">Профессиональная селфи-палка</p>
+                        </a>
                         <button class="popover__product-delete-button" type="button">
                           <span class="visually-hidden">Удалить товар из корзины.</span>
                         </button>
@@ -440,10 +446,10 @@
                 <a class="service__link button button-yellow button-active" href="#"><span class="button-yellow-line"></span>Доставка</a>
               </li>
               <li class="service__item">
-                <a class="service__link button-yellow button"><span class="button-yellow-line" href="#"></span>Гарантия</a>
+                <a class="service__link button-yellow button" href="#"><span class="button-yellow-line" ></span>Гарантия</a>
               </li>
               <li class="service__item">
-                <a class="service__link button-yellow button "><span class="button-yellow-line" href="#"></span>Кредит</a>
+                <a class="service__link button-yellow button" href="#"><span class="button-yellow-line" ></span>Кредит</a>
               </li>
             </ul>
           </div>
@@ -569,7 +575,7 @@
             </div>
 
             <div>
-              <a class="contacts__button button-yellow button"><span class="button-yellow-line" href="#"></span>Напишите нам</a>
+              <a class="contacts__button button-yellow button" tabindex="0" href="#"><span class="button-yellow-line"></span>Напишите нам</a>
             </div>
           </div>
         </section>
@@ -582,7 +588,9 @@
           <div class="subscribe__text-wrapper">
             <h2 class="subscribe__title section-title">Подпишитесь на рассылку</h2>
 
-            <p class="subscribe__text-main section-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <div class="subscribe__text-container">
+              <p class="subscribe__text-main section-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            </div>
           </div>
 
           <div class="subscribe__form-container">
@@ -590,7 +598,7 @@
               <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="suscribe__field field">
                   <span class="visually-hidden">E-mail</span>
-                  <input class="field-input" type="email" placeholder="Ваш e-mail" required>
+                  <input class="field-input" type="email" name="email" placeholder="Ваш e-mail" required>
                   <span class="suscribe__field-icon"></span>
                 </label>
                 <div class="subscribe__button-wrapper">
@@ -599,7 +607,7 @@
               </form>
             </div>
 
-            <div class="subscribe_text-wrapper">
+            <div class="subscribe__last-text-wrapper">
               <span class="visually-hidden">Зелёная галочка.</span>
               <p class="subscribe__text section-description">Это бесплатно</p>
             </div>
@@ -625,7 +633,9 @@
         </a>
 
         <div class="page-footer__contacts-list">
-          <address class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+          <div class="page-footer__adress-wrapper">
+            <address class="page-footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+          </div>
 
           <ul class="page-footer__information-menu">
             <li class="page-footer__information-menu-item">
@@ -639,7 +649,7 @@
             </li>
           </ul>
 
-          <a class="page-footer__number-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <div class="page-footer__phone-wrapper"><a class="page-footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a></div>
         </div>
 
         <div class="page-footer__links-list">
@@ -719,7 +729,7 @@
         <form  class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal__form-item">
             Ваше имя:
-            <input class="modal__input modal__input-name" type="text" placeholder="Введите имя" onfocus="(this.type='date')" name="Name-of-client" required>
+            <input class="modal__input modal__input-name" type="text" placeholder="Введите имя" name="Name-of-client" required>
             <span class="modal__input-icon-name"></span>
             <span class="modal__input-message">Добавьте имя</span>
           </label>
