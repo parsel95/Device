@@ -69,10 +69,10 @@
                 <a class="navigation-menu__link standart-state" href="#">Сравнить</a>
               </li>
               <li class="navigation-menu__item">
-                <a class="navigation-menu__link popover__close-button standart-state" href="#" >
+                <a class="navigation-menu__link popover__open-button standart-state" href="#" >
                   <span class="navigation-menu__icon">2</span>Корзина
                 </a>
-                <div class="popover popver-cart">
+                <div class="popover popover-cart">
                   <div class="popover__content">
                     <h2 class="visually-hidden">Корзина.</h2>
 
@@ -98,8 +98,8 @@
                     </ul>
 
                     <div class="popover__summary">
-                      <p class="popover__text">Товаров: 2</p>
-                      <p class="popover__text">Сумма: 2000 ₽</p>
+                      <p class="popover__text popover__text--count">Товаров: 2</p>
+                      <p class="popover__text popover__text--sum">Сумма: 2000 ₽</p>
                     </div>
 
                     <div class="popover__button-wrapper">
@@ -146,7 +146,7 @@
 
             <ul class="header-nav__information-menu information-menu">
               <li class="information-menu__item">
-                <a class="information-menu__link standart-state" href="#">Доставка</a>
+                <a class="information-menu__link standart-state" id="delivery" href="#">Доставка</a>
               </li>
               <li class="information-menu__item">
                 <a class="information-menu__link standart-state" href="#">Гарантия</a>
@@ -168,8 +168,8 @@
         <div class="container">
           <ol class="main-slaider__list">
 
-            <li class="main-slaider__item" id="main-slaider__slide1"
-            tabindex="-1">
+            <li class="main-slaider__item main-slider__item-active"
+            tabindex="-1" data-name="slide1">
               <div class="main-slaider__upper-background"></div>
 
               <span class="main-slaider__number">01</span>
@@ -178,10 +178,10 @@
                 <div class="main-slaider__left-part">
                   <img class="main-slaider__img" src="img/Index/1.Slider/slider-1.png" alt="Квадракоптер" width="560" height="560">
                   <div class="main-slider__controls">
-                    <a class="main-slaider__button standart-state main-slaider__prev" href="#main-slaider__slide3" >
+                    <a class="main-slaider__button standart-state main-slaider__prev" href="#" >
                       <span class="visually-hidden">Предыдущий слайд.</span>
                     </a>
-                    <a class="main-slaider__button standart-state main-slaider__next" href="#main-slaider__slide2">
+                    <a class="main-slaider__button standart-state main-slaider__next" href="#">
                       <span class="visually-hidden">Следующий слайд.</span>
                     </a>
                   </div>
@@ -200,21 +200,21 @@
                       <ol class="content-slaider__navigation-list">
                         <li class="content-slaider__navigation-item">
                           <div class="content-slaider__navigation-button-ouline" tabindex="0"></div>
-                          <a class="content-slaider__navigation-button content-slaider__navigation-button_active standart-state" href="#main-slaider__slide1" tabindex="-1">
+                          <a class="content-slaider__navigation-button content-slaider__navigation-button_active standart-state" href="#" tabindex="-1" data-name="slide1">
                             <span class="visually-hidden">Перейти на 1 слайд.</span>
                           </a>
 
                         </li>
                         <li class="content-slaider__navigation-item">
                           <div class="content-slaider__navigation-button-ouline" tabindex="0"></div>
-                          <a class="content-slaider__navigation-button standart-state" href="#main-slaider__slide2" tabindex="-1">
+                          <a class="content-slaider__navigation-button standart-state" href="#" tabindex="-1" data-name="slide2">
                             <span class="visually-hidden">Перейти на 2 слайд.</span>
                           </a>
 
                         </li>
                         <li class="content-slaider__navigation-item">
                           <div class="content-slaider__navigation-button-ouline" tabindex="0"></div>
-                          <a class="content-slaider__navigation-button standart-state" href="#main-slaider__slide3" tabindex="-1">
+                          <a class="content-slaider__navigation-button standart-state" href="#" tabindex="-1" data-name="slide3">
                             <span class="visually-hidden">Перейти на 3 слайд.</span>
                           </a>
                         </li>
@@ -236,8 +236,8 @@
               </div>
             </li>
 
-            <li class="main-slaider__item" id="main-slaider__slide2"
-            tabindex="-1">
+            <li class="main-slaider__item"
+            tabindex="-1" data-name="slide2">
               <div class="main-slaider__upper-background">
                 <span class="main-slaider__number">02</span>
               </div>
@@ -246,10 +246,10 @@
                 <div class="main-slaider__left-part">
                   <img class="main-slaider__img" src="img/Index/1.Slider/slider-2.png" alt="Квадракоптер" width="560" height="560">
                   <div class="main-slider__controls">
-                    <a class="main-slaider__button standart-state main-slaider__prev" href="#main-slaider__slide1">
+                    <a class="main-slaider__button standart-state main-slaider__prev" href="#">
                       <span class="visually-hidden">Предыдущий слайд.</span>
                     </a>
-                    <a class="main-slaider__button standart-state main-slaider__next" href="#main-slaider__slide3">
+                    <a class="main-slaider__button standart-state main-slaider__next" href="#">
                       <span class="visually-hidden">Следующий слайд.</span>
                     </a>
                   </div>
@@ -268,25 +268,22 @@
                     <aside class="content-slaider__navigation">
                       <ol class="content-slaider__navigation-list">
                         <li class="content-slaider__navigation-item">
-                          <div class="content-slaider__navigation-button-ouline" tabindex="0">
-                            <a class="content-slaider__navigation-button standart-state" href="#main-slaider__slide1" tabindex="-1">
-                              <span class="visually-hidden">Перейти на 1 слайд.</span>
-                            </a>
-                          </div>
+                          <div class="content-slaider__navigation-button-ouline" tabindex="0"></div>
+                          <a class="content-slaider__navigation-button standart-state" href="#" tabindex="-1" data-name="slide1">
+                            <span class="visually-hidden">Перейти на 1 слайд.</span>
+                          </a>
                         </li>
                         <li class="content-slaider__navigation-item">
-                          <div tabindex="0" class="content-slaider__navigation-button-ouline">
-                            <a class="content-slaider__navigation-button content-slaider__navigation-button_active standart-state" href="#main-slaider__slide2" tabindex="-1">
-                              <span class="visually-hidden">Перейти на 2 слайд.</span>
-                            </a>
-                          </div>
+                          <div tabindex="0" class="content-slaider__navigation-button-ouline"></div>
+                          <a class="content-slaider__navigation-button content-slaider__navigation-button_active standart-state" href="#" tabindex="-1" data-name="slide2">
+                            <span class="visually-hidden">Перейти на 2 слайд.</span>
+                          </a>
                         </li>
                         <li class="content-slaider__navigation-item">
-                          <div tabindex="0" class="content-slaider__navigation-button-ouline">
-                            <a class="content-slaider__navigation-button standart-state" href="#main-slaider__slide3" tabindex="-1">
-                              <span class="visually-hidden">Перейти на 3 слайд.</span>
-                            </a>
-                          </div>
+                          <div tabindex="0" class="content-slaider__navigation-button-ouline"></div>
+                          <a class="content-slaider__navigation-button standart-state" href="#" tabindex="-1" data-name="slide3">
+                            <span class="visually-hidden">Перейти на 3 слайд.</span>
+                          </a>
                         </li>
                       </ol>
                     </aside>
@@ -302,8 +299,8 @@
               </div>
             </li>
 
-            <li class="main-slaider__item" id="main-slaider__slide3"
-            tabindex="-1">
+            <li class="main-slaider__item"
+            tabindex="-1" data-name="slide3">
               <div class="main-slaider__upper-background">
                 <span class="main-slaider__number">03</span>
               </div>
@@ -312,10 +309,10 @@
                 <div class="main-slaider__left-part">
                   <img class="main-slaider__img" src="img/Index/1.Slider/slider-3.png" alt="Квадракоптер" width="560" height="560">
                   <div class="main-slider__controls">
-                    <a class="main-slaider__button standart-state main-slaider__prev" href="#main-slaider__slide2">
+                    <a class="main-slaider__button standart-state main-slaider__prev" href="#">
                       <span class="visually-hidden">Предыдущий слайд.</span>
                     </a>
-                    <a class="main-slaider__button standart-state main-slaider__next" href="#main-slaider__slide1">
+                    <a class="main-slaider__button standart-state main-slaider__next" href="#">
                       <span class="visually-hidden">Следующий слайд.</span>
                     </a>
                   </div>
@@ -334,25 +331,22 @@
                     <aside class="content-slaider__navigation">
                       <ol class="content-slaider__navigation-list">
                         <li class="content-slaider__navigation-item">
-                          <div tabindex="0" class="content-slaider__navigation-button-ouline">
-                            <a class="content-slaider__navigation-button standart-state" href="#main-slaider__slide1" tabindex="-1">
-                              <span class="visually-hidden">Перейти на 1 слайд.</span>
-                            </a>
-                          </div>
+                          <div tabindex="0" class="content-slaider__navigation-button-ouline"></div>
+                          <a class="content-slaider__navigation-button standart-state" href="#" tabindex="-1" data-name="slide1">
+                            <span class="visually-hidden">Перейти на 1 слайд.</span>
+                          </a>
                         </li>
                         <li class="content-slaider__navigation-item">
-                          <div tabindex="0" class="content-slaider__navigation-button-ouline">
-                            <a class="content-slaider__navigation-button standart-state" href="#main-slaider__slide2" tabindex="-1">
-                              <span class="visually-hidden">Перейти на 2 слайд.</span>
-                            </a>
-                          </div>
+                          <div tabindex="0" class="content-slaider__navigation-button-ouline"></div>
+                          <a class="content-slaider__navigation-button standart-state" href="#" tabindex="-1" data-name="slide2">
+                            <span class="visually-hidden">Перейти на 2 слайд.</span>
+                          </a>
                         </li>
                         <li class="content-slaider__navigation-item">
-                          <div tabindex="0" class="content-slaider__navigation-button-ouline">
-                            <a class="content-slaider__navigation-button content-slaider__navigation-button_active standart-state" href="#main-slaider__slide3" tabindex="-1">
-                              <span class="visually-hidden">Перейти на 3 слайд.</span>
-                            </a>
-                          </div>
+                          <div tabindex="0" class="content-slaider__navigation-button-ouline"></div>
+                          <a class="content-slaider__navigation-button content-slaider__navigation-button_active standart-state" href="#" tabindex="-1" data-name="slide3">
+                            <span class="visually-hidden">Перейти на 3 слайд.</span>
+                          </a>
                         </li>
                       </ol>
                     </aside>
@@ -427,7 +421,7 @@
         <h2 class="visually-hidden">Услуги.</h2>
 
         <ol class="services-list">
-          <li class="services__item service">
+          <li class="services__item service services__item--active" data-name="deliverySlide1">
             <div class="service__background"></div>
             <div class="container">
               <div class="service__container">
@@ -442,19 +436,19 @@
 
               <ul class="service__list">
                 <li class="service__item">
-                  <a class="service__link button button-yellow button-active" href="#"><span class="button-yellow-line"></span>Доставка</a>
+                  <a class="service__link button button-yellow button-active" href="#" data-name="deliverySlide1"><span class="button-yellow-line"></span>Доставка</a>
                 </li>
                 <li class="service__item">
-                  <a class="service__link button-yellow button" href="#"><span class="button-yellow-line" ></span>Гарантия</a>
+                  <a class="service__link button-yellow button" href="#" data-name="deliverySlide2"><span class="button-yellow-line" ></span>Гарантия</a>
                 </li>
                 <li class="service__item">
-                  <a class="service__link button-yellow button" href="#"><span class="button-yellow-line" ></span>Кредит</a>
+                  <a class="service__link button-yellow button" href="#" data-name="deliverySlide3"><span class="button-yellow-line" ></span>Кредит</a>
                 </li>
               </ul>
             </div>
           </li>
 
-          <li class="services__item service">
+          <li class="services__item service" data-name="deliverySlide2">
             <div class="service__background"></div>
             <div class="container">
               <div class="service__container">
@@ -469,19 +463,19 @@
 
               <ul class="service__list">
                 <li class="service__item">
-                  <a class="service__link button button-yellow" href="#"><span class="button-yellow-line"></span>Доставка</a>
+                  <a class="service__link button button-yellow" href="#" data-name="deliverySlide1"><span class="button-yellow-line"></span>Доставка</a>
                 </li>
                 <li class="service__item">
-                  <a class="service__link button-yellow button button-active" href="#"><span class="button-yellow-line"></span>Гарантия</a>
+                  <a class="service__link button-yellow button button-active" href="#" data-name="deliverySlide2"><span class="button-yellow-line"></span>Гарантия</a>
                 </li>
                 <li class="service__item">
-                  <a class="service__link button-yellow button" href="#"><span class="button-yellow-line"></span>Кредит</a>
+                  <a class="service__link button-yellow button" href="#" data-name="deliverySlide3"><span class="button-yellow-line"></span>Кредит</a>
                 </li>
               </ul>
             </div>
           </li>
 
-          <li class="services__item service">
+          <li class="services__item service" data-name="deliverySlide3">
             <div class="service__background"></div>
             <div class="container">
               <div class="service__container">
@@ -496,13 +490,13 @@
 
               <ul class="service__list">
                 <li class="service__item">
-                  <a class="service__link button button-yellow" href="#"><span class="button-yellow-line"></span>Доставка</a>
+                  <a class="service__link button button-yellow" href="#" data-name="deliverySlide1"><span class="button-yellow-line"></span>Доставка</a>
                 </li>
                 <li class="service__item">
-                  <a class="service__link button-yellow button" href="#"><span class="button-yellow-line"></span>Гарантия</a>
+                  <a class="service__link button-yellow button" href="#" data-name="deliverySlide2"><span class="button-yellow-line"></span>Гарантия</a>
                 </li>
                 <li class="service__item">
-                  <a class="service__link button-yellow button button-active" href="#"><span class="button-yellow-line"></span>Кредит</a>
+                  <a class="service__link button-yellow button button-active" href="#" data-name="deliverySlide3"><span class="button-yellow-line"></span>Кредит</a>
                 </li>
               </ul>
             </div>
@@ -715,8 +709,8 @@
       </div>
     </footer>
 
-    <div class="modal__container">
-      <div class="modal modal-auth">
+    <div class="modal modal-auth">
+      <div class="modal__container ">
 
         <section class="modal__content">
           <div class="modal__header-wrapper">
@@ -775,6 +769,7 @@
         </section>
       </div>
     </div>
-    <script src="/js/script.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -69,10 +69,10 @@
                 <a class="navigation-menu__link standart-state" href="#">Сравнить</a>
               </li>
               <li class="navigation-menu__item">
-                <a class="navigation-menu__link standart-state" href="#">
+                <a class="navigation-menu__link popover__open-button standart-state" href="#">
                   <span class="navigation-menu__icon">2</span>Корзина
                 </a>
-                <div class="popover popver-cart">
+                <div class="popover popover-cart">
                   <div class="popover__content">
                     <h2 class="visually-hidden">Корзина.</h2>
 
@@ -98,8 +98,8 @@
                     </ul>
 
                     <div class="popover__summary">
-                      <p class="popover__text">Товаров: 2</p>
-                      <p class="popover__text">Сумма: 2000 ₽</p>
+                      <p class="popover__text popover__text--count">Товаров: 2</p>
+                      <p class="popover__text popover__text--sum">Сумма: 2000 ₽</p>
                     </div>
 
                     <div class="popover__button-wrapper">
@@ -211,13 +211,13 @@
                         <div class="range__wrapper-inputs">
                           <label class="range__label">
                             от
-                            <input class="range__input" type="number" value="0" name="price-from" min="0" max="10000"
+                            <input class="range__input range__input-min" type="number" value="0" name="price-from" min="0" max="10000"
                              step="100">
                           </label>
 
                           <label class="range__label">
                             до
-                            <input class="range__input" type="number" value="5000" name="price-to" min="0" max="10000"
+                            <input class="range__input range__input-" type="number" value="5000" name="price-to" min="0" max="10000"
                              step="100">
                           </label>
                         </div>
@@ -343,24 +343,24 @@
               <div class="catalog__card-list">
                 <h3 class="visually-hidden">Карточки товаров.</h3>
 
-                <article class="card" tabindex="0">
+                <article class="card" tabindex="0" data-price="500">
                   <a class="card__link" href="#" tabindex="-1">
                     <img src="img/Catalog/product-2.png" alt="" class="card__img" width="360" height="380">
                     <div class="card__wrapper">
                       <h4 class="card__title">Любительская селфи-палка</h4>
-                      <p class="card__text">500 ₽</p>
+                      <p class="card__price">500 ₽</p>
                     </div>
                     <p class="card__button button"><span class="button-yellow-line"></span>Подробнее</p>
                     <span class="card__new">NEW</span>
                   </a>
                 </article>
 
-                <article class="card" tabindex="0">
+                <article class="card" tabindex="0" data-price="1500">
                   <a class="card__link" href="#" tabindex="-1">
                     <img src="img/Catalog/product-2-1.png" alt="" class="card__img"  width="360" height="380">
                     <div class="card__wrapper">
                       <h4 class="card__title">Профессиональная селфи-палка</h4>
-                      <p class="card__text">1 500 ₽</p>
+                      <p class="card__price">1 500 ₽</p>
                     </div>
                     <p class="card__button button">
                       <span class="button-yellow-line"></span>
@@ -370,24 +370,24 @@
                   </a>
                 </article>
 
-                <article class="card" tabindex="0">
+                <article class="card" tabindex="0" data-price="2500">
                   <a class="card__link" href="#" tabindex="-1">
                     <img class="card__img" src="img/Catalog/product-2-2.png" alt="" width="360" height="380">
                     <div class="card__wrapper">
                       <h4 class="card__title">Непотопляемая селфи-палка</h4>
-                      <p class="card__text">2 500 ₽</p>
+                      <p class="card__price">2 500 ₽</p>
                     </div>
                     <p class="card__button button"><span class="button-yellow-line"></span>Подробнее</p>
                     <span class="card__new">NEW</span>
                   </a>
                 </article>
 
-                <article class="card" tabindex="0">
+                <article class="card" tabindex="0" data-price="1500">
                   <a class="card__link" href="#" tabindex="-1">
                     <img class="card__img" src="img/Catalog/product-2-3.png" alt="" width="360" height="380">
                     <div class="card__wrapper">
                       <h4 class="card__title">Селфи-палка «Следуй за мной»</h4>
-                      <p class="card__text">1 500 ₽</p>
+                      <p class="card__price">1 500 ₽</p>
                     </div>
                     <p class="card__button button"><span class="button-yellow-line"></span>Подробнее</p>
                     <span class="card__new">NEW</span>
@@ -590,7 +590,6 @@
         </section>
       </div>
     </div>
-
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

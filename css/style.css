@@ -626,7 +626,7 @@ details[open] > .dropdown__list-wrapper {
 }
 
 .main-slaider__list {
-  margin: -37px 0 0 0;
+  margin: -30px 0 0 0;
   padding: 0;
 
   list-style-type: none;
@@ -634,10 +634,11 @@ details[open] > .dropdown__list-wrapper {
 
 .main-slaider__item {
   position: relative;
+  display: none;
 }
 
-.main-slaider__item:not(:first-child) {
-  display: none;
+.main-slider__item-active {
+  display: list-item;
 }
 
 .main-slaider__upper-background {
@@ -869,6 +870,13 @@ details[open] > .dropdown__list-wrapper {
   list-style-type: none;
 }
 
+.services__item {
+  display: none;
+}
+
+.services__item--active {
+  display: list-item;
+}
 
 /* service */
 
@@ -879,10 +887,6 @@ details[open] > .dropdown__list-wrapper {
 
   text-decoration: none;
   color: inherit;
-}
-
-.service:not(:first-child) {
-  display: none;
 }
 
 .service__background {
@@ -1684,7 +1688,7 @@ details[open] > .dropdown__list-wrapper {
 
 .range__toogle-max {
   top: -8px;
-  right: -9px;
+  right: 0;
 }
 
 .range__wrapper-inputs {
@@ -1940,7 +1944,7 @@ details[open] > .dropdown__list-wrapper {
 
 .card__link:hover img,
 .card__link:hover h4,
-.card__link:hover .card__text,
+.card__link:hover .card__price,
 .card__link:hover .card__new {
   opacity: 0.6;
 }
@@ -1956,7 +1960,7 @@ details[open] > .dropdown__list-wrapper {
 
 .card__link:active img,
 .card__link:active h4,
-.card__link:active .card__text,
+.card__link:active .card__price,
 .card__link:active .card__new {
   opacity: 0.6;
 }
@@ -1975,7 +1979,7 @@ details[open] > .dropdown__list-wrapper {
   letter-spacing: -0.02em;
 }
 
-.card__text {
+.card__price {
   margin: 0;
   padding: 0;
 
@@ -2447,13 +2451,13 @@ details[open] > .dropdown__list-wrapper {
 
 /* modal*/
 
-.modal__container {
+.modal {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 5;
-
   display: none;
+
   width: 100%;
   height: 100%;
 
@@ -2461,10 +2465,10 @@ details[open] > .dropdown__list-wrapper {
 }
 
 .modal__active {
-  display: flex;
+  display: block;
 }
 
-.modal {
+.modal__container {
   position: relative;
 
   margin: auto;
@@ -2476,7 +2480,7 @@ details[open] > .dropdown__list-wrapper {
   background: #FFFFFF;
 }
 
-.modal-auth {
+.modal-auth .modal__container {
   width: 920px;
 }
 
