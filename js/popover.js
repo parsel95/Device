@@ -1,4 +1,4 @@
-// Рабочий код, отвечающий за поповер(корзина)
+// Поповер(корзина)
 
 let popoverCarts = document.querySelectorAll('.popover-cart');
 let popoverOpenButtons = document.querySelectorAll('.popover__open-button');
@@ -14,7 +14,7 @@ for (let popoverOpenButton of popoverOpenButtons) {
       popoverCart.classList.toggle('popover__active');
     }
   }
-}
+};
 
 let popoverDeleteButtons = document.querySelectorAll('.popover__product-delete-button');
 
@@ -27,9 +27,4 @@ for (let popoverDeleteButton of popoverDeleteButtons) {
     popoverTextCount.textContent = 'Товаров: ' + popoverCount;
     popoverTextSum.textContent = 'Сумма: ' + popoverSum + ' ₽';
   }
-}
-
-
-
-
-
+};
